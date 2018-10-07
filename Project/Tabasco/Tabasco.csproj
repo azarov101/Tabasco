@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CDFCD35F-2623-45AF-A055-B589B6628E0A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tabasco</RootNamespace>
+    <AssemblyName>Tabasco</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Employee.cs" />
+    <Compile Include="f_AddEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f_AddEmployee.Designer.cs">
+      <DependentUpon>f_AddEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="f_AddSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f_AddSupplier.Designer.cs">
+      <DependentUpon>f_AddSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="f_Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f_Employee.Designer.cs">
+      <DependentUpon>f_Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="f_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f_Menu.Designer.cs">
+      <DependentUpon>f_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="f_Menu1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f_Menu1.Designer.cs">
+      <DependentUpon>f_Menu1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="f_Supplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f_Supplier.Designer.cs">
+      <DependentUpon>f_Supplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="f_Gmenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f_Gmenu.Designer.cs">
+      <DependentUpon>f_Gmenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="f_Gmenu1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f_Gmenu1.Designer.cs">
+      <DependentUpon>f_Gmenu1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="f_Gmenu2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f_Gmenu2.Designer.cs">
+      <DependentUpon>f_Gmenu2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="f_Vmenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f_Vmenu.Designer.cs">
+      <DependentUpon>f_Vmenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Human.cs" />
+    <Compile Include="Meal.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Supplier.cs" />
+    <EmbeddedResource Include="f_AddEmployee.resx">
+      <DependentUpon>f_AddEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f_AddSupplier.resx">
+      <DependentUpon>f_AddSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f_Employee.resx">
+      <DependentUpon>f_Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f_Menu.resx">
+      <DependentUpon>f_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f_Menu1.resx">
+      <DependentUpon>f_Menu1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f_Supplier.resx">
+      <DependentUpon>f_Supplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f_Gmenu.resx">
+      <DependentUpon>f_Gmenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f_Vmenu.resx">
+      <DependentUpon>f_Vmenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Food-Waiter-icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
